@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.2" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.FrameFormInfo">
+  <Properties>
+    <Property name="focusTraversalPolicy" type="java.awt.FocusTraversalPolicy" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+      <Connection code="new MyFocusTraversalPolicy(new Component[]{tfNom,tfPrenom,tfBureau,lstFonctions,btnEnregistrer})" type="code"/>
+    </Property>
+    <Property name="resizable" type="boolean" value="false"/>
+    <Property name="title" type="java.lang.String" value="Saisie d&apos;un employ&#xe9;"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <Events>
+    <EventHandler event="windowClosing" listener="java.awt.event.WindowListener" parameters="java.awt.event.WindowEvent" handler="exitForm"/>
+  </Events>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="label1" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="label2" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="label3" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="label4" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="tfBureau" min="-2" pref="48" max="-2" attributes="0"/>
+                  <Component id="lstFonctions" alignment="0" pref="200" max="32767" attributes="0"/>
+                  <Component id="tfPrenom" alignment="0" max="32767" attributes="0"/>
+                  <Component id="tfNom" alignment="0" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="btnEnregistrer" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="label1" min="-2" max="-2" attributes="0"/>
+                  <Component id="tfNom" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="label2" min="-2" max="-2" attributes="0"/>
+                  <Component id="tfPrenom" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="label3" min="-2" max="-2" attributes="0"/>
+                  <Component id="tfBureau" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="label4" min="-2" max="-2" attributes="0"/>
+                  <Component id="lstFonctions" min="-2" pref="100" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="btnEnregistrer" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="java.awt.Label" name="label1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nom"/>
+      </Properties>
+    </Component>
+    <Component class="java.awt.TextField" name="tfNom">
+      <Events>
+        <EventHandler event="textValueChanged" listener="java.awt.event.TextListener" parameters="java.awt.event.TextEvent" handler="tfTextValueChanged"/>
+      </Events>
+    </Component>
+    <Component class="java.awt.Label" name="label2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Pr&#xe9;nom"/>
+      </Properties>
+    </Component>
+    <Component class="java.awt.TextField" name="tfPrenom">
+      <Events>
+        <EventHandler event="textValueChanged" listener="java.awt.event.TextListener" parameters="java.awt.event.TextEvent" handler="tfTextValueChanged"/>
+      </Events>
+    </Component>
+    <Component class="java.awt.Label" name="label3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Bureau"/>
+      </Properties>
+    </Component>
+    <Component class="java.awt.TextField" name="tfBureau">
+      <Events>
+        <EventHandler event="textValueChanged" listener="java.awt.event.TextListener" parameters="java.awt.event.TextEvent" handler="tfTextValueChanged"/>
+      </Events>
+    </Component>
+    <Component class="java.awt.Label" name="label4">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Fonction"/>
+      </Properties>
+    </Component>
+    <Component class="java.awt.List" name="lstFonctions">
+      <Events>
+        <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="lstFonctionsItemStateChanged"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="lstFonctionsActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="java.awt.Button" name="btnEnregistrer">
+      <Properties>
+        <Property name="label" type="java.lang.String" value="Enregistrer"/>
+      </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value=""/>
+      </AccessibilityProperties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEnregistrerActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>
